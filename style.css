@@ -1,0 +1,52 @@
+:root {
+    --heading: rgb(255, 255, 255);
+    --table: black;
+    --th: rgb(185, 185, 238);
+}
+
+body {
+
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin: 2px auto;
+    font-size: medium;
+    border: 0.1px solid var(--table);
+    font-weight: bolder;
+}
+
+td {
+    border: 1px solid var(--table);
+}
+
+th,
+td {
+    font-weight: bold;
+    border: 1px solid var(--table);
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    font-weight: lighter;
+}
+
+th {
+    background-color: var(--th);
+    font-weight: bolder;
+}
+#prev , #next,select,button{
+    padding: 8px 15px;
+    border:  1px solid gray;
+    border-radius: 5px;
+    background:var(--th);
+}
+
+
+

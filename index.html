@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+
+        <td>
+            <select onChange="sortD(this);">
+                <option value="">Sort by</option>
+                <option value="Imdb">Imdb</option>
+                <option value="Tomatoes">Tomatoes</option>
+                <option value="AverageRating">AverageRating</option>
+            </select>
+        </td>
+
+        <td>
+            <select onChange="orderD(this);">
+                <option value="">Sort order</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+            </select>
+        </td>
+
+        <td>
+            <button onclick="makeSort()">Sort Now</button>
+        </td>
+
+    <table id="row"></table>
+
+    <table class="button">
+        <tr>
+            <td id="SI"></td>
+            <td><button onclick="prevPage()"  id="prev">Previous</button></td>
+            <td><button onclick="nextPage()" id="next">Next</button></td>
+        </tr>
+    </table>
+        
+
+    </table>
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
